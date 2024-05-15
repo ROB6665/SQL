@@ -1,0 +1,60 @@
+use week;
+
+SELECT * FROM Sales;
+
+#     OPERATORS
+
+# Comparision Operators
+#    =<, =>, ==, <, >
+
+# Logical Operators
+#   And, Or, Not
+
+# Membership Operators
+#    in , not in
+
+# Arithmetic Operators
+#    *, /, -, +
+
+
+# COMPARISION OPERATORS
+select * from SALES Where PRICE > 30000;
+select * from SALES where QUANTITY > 10;
+select * from SALES where Price >= 50000;
+select * from SALES where QUANTITY <= 50;
+select * from SALES where LOCATION = "DELHI";
+
+
+
+# LOGICAL OPERATORS
+select * from Sales where LOCATION = "MUMBAI" OR LOCATION =  "DELHI";
+select * from Sales where LOCATION = "DELHI" AND QUANTITY > 100;
+select * from Sales where GENDER = "MALE" AND QUANTITY > 100;
+select * from Sales where GENDER = "FEMALE" AND CATAGORIES = "MAKEUP";
+
+
+
+# MEMBERSHIP OPERATORS
+SELECT * FROM SALES WHERE LOCATION = "DELHI" OR LOCATION = "MUMBAI" OR LOCATION = "PUNE";
+SELECT * FROM SALES WHERE LOCATION IN ("DELHI", "MUMBAI", "PUNE");
+SELECT * FROM SALES WHERE LOCATION NOT IN ("DELHI", "MUMBAI", "PUNE");
+
+SELECT * FROM SALES WHERE QUANTITY >= 80 AND QUANTITY <= 150;
+SELECT * FROM SALES WHERE QUANTITY BETWEEN 80 AND 150;
+
+
+
+# ARTHIMETICS OPERATORS
+SELECT CUSTOMER_NAME, PRODUCT, PRICE * QUANTITY AS Total_amount FROM SALES; 
+
+# ADDITION +
+SELECT 25+5;
+# SUBSTRACTION - 
+SELECT 25-5;
+# DIVISION /
+SELECT 25/5;
+# MULTIPLICATION *
+SELECT 5*5;
+# MODULES %
+SELECT 20%3;
+
